@@ -24,9 +24,9 @@ public class ProfileActivity extends AppCompatActivity {
         // Настройка меню (чтобы иконки были цветными)
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation_profile);
         bottomNav.setItemIconTintList(null);
-        bottomNav.setSelectedItemId(R.id.nav_profile); // Подсвечиваем профиль
+        bottomNav.setSelectedItemId(R.id.nav_profile);
 
-        // Кнопка выхода (логика перехода на самый первый экран)
+        // Кнопка выхода
         TextView tvExit = findViewById(R.id.tv_exit);
         tvExit.setOnClickListener(v -> {
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);

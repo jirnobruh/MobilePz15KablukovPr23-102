@@ -21,6 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class HomeActivity extends AppCompatActivity {
 
     private LinearLayout lastSelectedLayout = null;
+    ImageView ivProfile = findViewById(R.id.iv_profile);
     private int defaultCircleColor, selectedCircleColor;
 
     @Override
@@ -28,11 +29,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Цвета из ресурсов (настрой их в colors.xml)
         defaultCircleColor = ContextCompat.getColor(this, R.color.white);
         selectedCircleColor = ContextCompat.getColor(this, R.color.teal_200);
 
-        // Находим наши кнопки-контейнеры
+        // Находим кнопки-контейнеры
         setupFeelingButton(R.id.ll_calm, R.string.calm);
         setupFeelingButton(R.id.ll_relax, R.string.relax);
         setupFeelingButton(R.id.ll_focus, R.string.focus);
@@ -46,27 +46,33 @@ public class HomeActivity extends AppCompatActivity {
             }
             return true;
         });
+
+        ivProfile.setOnClickListener(v -> {
+            // Создаем намерение (Intent) для перехода
+            Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void setupFeelingButton(int layoutId, int stringResId) {
         LinearLayout layout = findViewById(layoutId);
         layout.setOnClickListener(v -> {
-            // 1. Сбрасываем предыдущую кнопку
+            // Сбрасываем предыдущую кнопку
             if (lastSelectedLayout != null) {
                 resetFeelingStyle(lastSelectedLayout);
             }
 
-            // 2. Выделяем текущую
+            // Выделяем текущую
             selectFeelingStyle(layout);
             lastSelectedLayout = layout;
 
-            // 3. Показываем сообщение
+            // Показываем сообщение
             Toast.makeText(this, getString(stringResId), Toast.LENGTH_SHORT).show();
         });
     }
 
     private void selectFeelingStyle(LinearLayout layout) {
-        View circle = layout.getChildAt(0); // ImageView (иконка)
+        View circle = layout.getChildAt(0);
         circle.setBackgroundTintList(ColorStateList.valueOf(selectedCircleColor));
     }
 
