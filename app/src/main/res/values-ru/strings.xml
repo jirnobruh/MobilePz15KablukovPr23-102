@@ -23,4 +23,8 @@
     <string name="anxious">Тревога</string>
     <string name="exit_btn">выход</string>
     <string name="username">Эмиль</string>
+    <string name="card_title">Медитация фокуса</string>
+    <string name="card_desc">Быстрый способ прийти в себя и оставаться продуктивным.</string>
+    <string name="card_button">подробнее</string>
+    <string name="toast_meditation_click">Открытие деталей медитации...</string>
 </resources>

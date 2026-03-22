@@ -23,4 +23,8 @@
     <string name="anxious">Anxious</string>
     <string name="exit_btn">exit</string>
     <string name="username">Emile</string>
+    <string name="card_title">Focus Meditation</string>
+    <string name="card_desc">A quick way to ground yourself and stay productive.</string>
+    <string name="card_button">more</string>
+    <string name="toast_meditation_click">Opening meditation details...</string>
 </resources>
