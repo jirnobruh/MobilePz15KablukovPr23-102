@@ -21,4 +21,6 @@
     <string name="relax">Расслабление</string>
     <string name="focus">Фокус</string>
     <string name="anxious">Тревога</string>
+    <string name="exit_btn">выход</string>
+    <string name="username">Эмиль</string>
 </resources>

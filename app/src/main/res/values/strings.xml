@@ -21,4 +21,6 @@
     <string name="relax">Relax</string>
     <string name="focus">Focus</string>
     <string name="anxious">Anxious</string>
+    <string name="exit_btn">exit</string>
+    <string name="username">Emile</string>
 </resources>

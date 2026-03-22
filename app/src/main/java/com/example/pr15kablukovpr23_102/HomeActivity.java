@@ -42,8 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_profile) {
-                // Переход в профиль
-                //startActivity(new Intent(this, ProfileActivity.class));
+                startActivity(new Intent(this, ProfileActivity.class));
             }
             return true;
         });
