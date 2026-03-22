@@ -21,7 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class HomeActivity extends AppCompatActivity {
 
     private LinearLayout lastSelectedLayout = null;
-    ImageView ivProfile = findViewById(R.id.iv_profile);
+
     private int defaultCircleColor, selectedCircleColor;
 
     @Override
@@ -37,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         setupFeelingButton(R.id.ll_relax, R.string.relax);
         setupFeelingButton(R.id.ll_focus, R.string.focus);
         setupFeelingButton(R.id.ll_anxious, R.string.anxious);
+        ImageView ivProfile = findViewById(R.id.iv_profile);
 
         // Обработка нижнего меню
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);

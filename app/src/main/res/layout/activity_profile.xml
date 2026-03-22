@@ -102,6 +102,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:scaleType="centerCrop"
+            android:clickable="true"
             android:src="@drawable/photo4" />
 
         <ImageView
@@ -110,6 +111,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:scaleType="centerCrop"
+            android:clickable="true"
             android:src="@drawable/photo5" />
     </GridLayout>
 
