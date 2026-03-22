@@ -33,10 +33,10 @@ public class HomeActivity extends AppCompatActivity {
         selectedCircleColor = ContextCompat.getColor(this, R.color.teal_200);
 
         // Находим наши кнопки-контейнеры
-        setupFeelingButton(R.id.btn_calm, R.string.calm);
-        setupFeelingButton(R.id.btn_relax, R.string.relax);
-        setupFeelingButton(R.id.btn_focus, R.string.focus);
-        setupFeelingButton(R.id.btn_anxious, R.string.anxious);
+        setupFeelingButton(R.id.ll_calm, R.string.calm);
+        setupFeelingButton(R.id.ll_relax, R.string.relax);
+        setupFeelingButton(R.id.ll_focus, R.string.focus);
+        setupFeelingButton(R.id.ll_anxious, R.string.anxious);
 
         // Обработка нижнего меню
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
