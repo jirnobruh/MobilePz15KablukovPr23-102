@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="welcome_text">Добро пожаловать в MAD Meditation</string>
     <string name="sign_in">Войти</string>
-    <string name="feeling_calm">Спокойствие</string>
+    <string name="email_hint">Электронная почта</string>
+    <string name="password_hint">Пароль</string>
+    <string name="welcome_caps">Привет!</string>
+    <string name="onboarding_subtitle">Наверное тут должен быть текст?
+    Да?
+    Так ведь?</string>
+    <string name="login_btn">Войти в аккаунт</string>
+    <string name="dont_have_account">Еще нет аккаунта? Зарегистрируйтесь</string>
+    <string name="sign_in_title">Вход</string>
+    <string name="sign_in_btn">Войти</string>
+    <string name="register_link">Регистрация</string>
+    <string name="error_empty_fields">Пожалуйста, заполните все поля</string>
+    <string name="error_invalid_email">Некорректный email</string>
+    <string name="welcome_back">С возвращением, Эмиль!</string>
+    <string name="how_are_you">Как вы себя чувствуете сегодня?</string>
+    <string name="calm">Спокойствие</string>
+    <string name="relax">Расслабление</string>
+    <string name="focus">Фокус</string>
+    <string name="anxious">Тревога</string>
 </resources>
