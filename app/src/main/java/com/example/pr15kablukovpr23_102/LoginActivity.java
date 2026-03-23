@@ -39,13 +39,13 @@ public class LoginActivity extends AppCompatActivity {
         String email = etEmail.getText().toString().trim();
         String password = etPassword.getText().toString().trim();
 
-        // 1. Проверка на пустоту
+        // Проверка на пустоту
         if (email.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, R.string.error_empty_fields, Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // 2. Проверка на корректность email (наличие @)
+        // Проверка на корректность email (наличие @)
         if (!email.contains("@")) {
             Toast.makeText(this, R.string.error_invalid_email, Toast.LENGTH_SHORT).show();
             return;

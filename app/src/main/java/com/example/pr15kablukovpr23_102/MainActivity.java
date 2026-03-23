@@ -36,11 +36,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // "Свое действие" (на будущее): переход на экран регистрации
         /*tvSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Пока можно просто выводить Toast или переходить на заглушку
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }

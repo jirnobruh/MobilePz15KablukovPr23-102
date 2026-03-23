@@ -10,26 +10,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProfileActivity extends AppCompatActivity {
-
-    // Сначала просто объявляем переменные
     private ImageView p1, p2, p3, p4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Сначала ПРИВЯЗЫВАЕМ макет
         setContentView(R.layout.activity_profile);
-
-        // Убираем Action Bar, если он есть
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-
-        // 2. Только теперь НАХОДИМ View в этом макете
         initViews();
-
-        // 3. Теперь ВЕШАЕМ обработчики кликов
         setupClickListeners();
-
-        // 4. Настройка навигации
         setupBottomNavigation();
     }
 
@@ -51,7 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
             Intent intent = new Intent(ProfileActivity.this, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-            finish(); // Закрываем текущую активити
+            finish();
         });
     }
 
