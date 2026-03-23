@@ -41,17 +41,20 @@ public class HomeActivity extends AppCompatActivity {
 
         // Обработка нижнего меню
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setItemIconTintList(null);
+
         bottomNav.setOnItemSelectedListener(item -> {
-            if (item.getItemId() == R.id.nav_profile) {
+            int id = item.getItemId();
+            if (id == R.id.nav_profile) {
+                // Просто переходим, НЕ вызывая finish()
                 startActivity(new Intent(this, ProfileActivity.class));
+                return true;
             }
             return true;
         });
 
         ivProfile.setOnClickListener(v -> {
-            // Создаем намерение (Intent) для перехода
-            Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
         });
     }
 

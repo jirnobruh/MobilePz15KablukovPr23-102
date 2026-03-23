@@ -54,5 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         // Если всё верно — переход на следующий экран (Main/Home)
         Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
         startActivity(intent);
+
+        finish();
     }
 }

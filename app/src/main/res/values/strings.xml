@@ -27,4 +27,5 @@
     <string name="card_desc">A quick way to ground yourself and stay productive.</string>
     <string name="card_button">more</string>
     <string name="toast_meditation_click">Opening meditation details...</string>
+    <string name="close_photo">close</string>
 </resources>
